@@ -1,5 +1,6 @@
     pgsql:
         image: 'postgres:13'
+        platform: linux/amd64
         ports:
             - '${FORWARD_DB_PORT:-5432}:5432'
         environment:
